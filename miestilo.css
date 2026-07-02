@@ -5,6 +5,8 @@
     --color-secundario: #86C222;
     --color-fondo: #F2F2F2;
     --color-texto: #181818;
+    
+    --color-rojo-cambiame: #FF0000; 
 }
 
 /* CONFIGURACIÓN GENERAL */
@@ -37,19 +39,11 @@ body {
 .p {
     font-size: 13px;
     line-height: 1.6;
-    color: #181818;
 }
 
 .logo {
-    grid-column: 1 / span 2; 
-    background-color: #0283c7; 
-    color: #FFFFFF;
-    text-align: center;
-    padding: 10px 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 1px;
+    grid-column: 1 / span 1;
+    align-content: center; 
 }
 
 .nav {
@@ -57,12 +51,12 @@ body {
     background-color: var(--color-secundario);
     color: #FFFFFF;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 16px 20px;
     margin-left: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 14px;
-    border-radius: 4px;
+    font-size: 16px;
+    border-radius: 8px;
 }
 
 .botonA {
@@ -87,22 +81,21 @@ body {
     border-radius: 10px;
 }
 
-.img {
-    background-color: #DBDBDB;
-    color: #666666;
-    font-size: 12px;
-    text-align: center;
-}
-
 .img-grande {
     height: 300px;
     line-height: 300px; 
 }
 
 .img-interna {
-    height: 220px;
-    line-height: 220px;
+    max-width: 520px;
 }
+
+.img-interna img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 
 /* ESTRUCTURAS GENERALES DE SECCIONES */
@@ -115,7 +108,7 @@ body {
 .seccion-caja {
     border: 1px solid #9e9e9e; 
     margin-top: 30px;
-    padding: 30px;
+    padding: 30px 120px;
     background-color: #FFFFFF;
 }
 
@@ -153,7 +146,7 @@ body {
 }
 
 .header-texto {
-    grid-column: 3 / span 4; 
+    grid-column: 2 / span 3; 
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800; 
@@ -199,7 +192,7 @@ body {
 
 .hero .p {
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 30px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
@@ -260,19 +253,14 @@ body {
     display: none; 
 }
 
-.noti-img-vacia {
-    height: 160px;
-    border: 1px solid #9e9e9e; 
-    background-color: #FFFFFF;
-}
 
 .noti-titulo {
     /*background-color: #DBDBDB;*/
     padding: 8px;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
 /*letra un toque mas alta*/
     display: inline-block; 
@@ -280,15 +268,6 @@ body {
     transform-origin: left;
 }
 
-.noticias-ver-mas {
-    grid-column: 1 / span 12;
-}
-
-.noticias-ver-mas a {
-    color: var(--color-texto);
-    font-size: 14px;
-    text-decoration: underline;
-}
 
 
 /* FORMULARIO */
@@ -310,9 +289,10 @@ body {
 .form-entrada {
     background-color: #DBDBDB;
     border: 1px solid #9e9e9e; 
-    padding: 10px;
-    font-size: 14px;
+    padding: 20px;
+    font-size: 16px;
     outline: none;
+    border-radius: 8px;
 }
 
 .form-seleccion-caja {
@@ -323,10 +303,12 @@ body {
     width: 100%;
     background-color: #DBDBDB;
     border: 1px solid #9e9e9e;
-    padding: 10px;
-    font-size: 14px;
-    height: 39px;
+    padding: 20px;
+    font-size: 16px;
+    height: 64px;
     outline: none;
+    border-radius: 8px;
+
 }
 
 .form-comentario {
@@ -335,9 +317,11 @@ body {
     background-color: #DBDBDB;
     border: 1px solid #9e9e9e;
     padding: 15px;
-    font-size: 14px;
+    font-size: 16px;
     resize: none;
     outline: none;
+    border-radius: 8px;
+
 }
 
 .formulario-caja-boton {
@@ -359,7 +343,8 @@ body {
     background-color: #DBDBDB;
     padding: 15px;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 16px;
+    border-radius: 8px;
 }
 
 .coment:last-child {
