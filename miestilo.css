@@ -331,6 +331,38 @@ body {
 }
 
 
+/* POPUP */
+.popup-modal {
+    border: 1px solid #9e9e9e;
+    border-radius: 5px; 
+    background-color: var(--color-fondo); 
+    padding: 30px;
+    margin: auto; 
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.popup-modal[open] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-width: 280px;
+}
+
+.popup-texto {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--color-texto);
+}
+
+/* fondo oscurecido del popup */
+.popup-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 /* COMENTARIOS */
 .comentarios {
     display: grid;
