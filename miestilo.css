@@ -383,6 +383,37 @@ body {
     margin-bottom: 0;
 }
 
+.coment-texto {
+    margin-left: 25px; 
+    margin-top: 10px;  
+    font-size: 13px;   
+    line-height: 1.5; 
+}
+
+
+/* ETIQUETAS DE COMENTARIOS (BADGES) */
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #181818; 
+    border-radius: 4px; 
+    margin: 0 6px; 
+    vertical-align: baseline; 
+    position: relative;
+    top: -1px;
+}
+
+.badge-vecino {
+    background-color: var(--color-secundario);
+}
+
+.badge-no-vecino {
+    background-color: var(--color-primario);
+    color: #FFFFFF; 
+}
 
 /* FOOTER */
 .footer {
