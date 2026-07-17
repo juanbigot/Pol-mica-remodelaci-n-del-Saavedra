@@ -279,7 +279,7 @@ body {
 
 
 .form {
-    grid-column: 1 / span 10; 
+    grid-column: 1 / span 12; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
@@ -325,9 +325,9 @@ body {
 }
 
 .formulario-caja-boton {
-    grid-column: 11 / span 2;
-    align-self: end;
+    grid-column: 1 / span 2;
     text-align: right; 
+    margin-top: 5px;
 }
 
 
