@@ -279,7 +279,7 @@ body {
 
 
 .form {
-    grid-column: 1 / span 10; 
+    grid-column: 1 / span 12; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
@@ -325,9 +325,9 @@ body {
 }
 
 .formulario-caja-boton {
-    grid-column: 11 / span 2;
-    align-self: end;
+    grid-column: 1 / span 2;
     text-align: right; 
+    margin-top: 5px;
 }
 
 
@@ -351,6 +351,37 @@ body {
     margin-bottom: 0;
 }
 
+.coment-texto {
+    margin-left: 25px; 
+    margin-top: 5px;  
+    margin-bottom: 15px;
+    font-size: 13px;   
+    line-height: 1.5; 
+}
+
+/* ETIQUETAS DE COMENTARIOS (BADGES) */
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #181818; 
+    border-radius: 4px; 
+    margin: 0 6px; 
+    vertical-align: baseline; 
+    position: relative;
+    top: -1px;
+}
+
+.badge-vecino {
+    background-color: var(--color-secundario);
+}
+
+.badge-no-vecino {
+    background-color: var(--color-primario);
+    color: #FFFFFF; 
+}
 
 /* FOOTER */
 .footer {
