@@ -74,7 +74,6 @@ body {
     border-radius: 4px;
 }
 
-/* Modificación del botón cuando se usa en el Hero */
 .hero .botonA {
     background-color: var(--color-secundario);
     border: none;
